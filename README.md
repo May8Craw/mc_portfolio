@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NextJS Portfolio Template
 
-## Getting Started
+A minimal, clean portfolio template built with Next.js. Perfect for developers who want a simple yet professional online presence without the complexity.
 
-First, run the development server:
+## Features
+- 🚀 Fast and lightweight
+- 📱 Fully responsive
+- 🔍 SEO friendly
+- 🌙 Dark/Light mode
+- 🎨 Clean, minimal design
+- ⚡ Easy to customize
+- 🚦 Next.js App Router ready
+- 📊 Analytics-ready (add via `layout.js`)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Tech Stack
+
+- Next.js 15
+- Tailwind CSS
+- JavaScript
+- DaisyUI
+
+## Deploy
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSachinbhujel%2FNextJS-Portfolio-Template)
+
+## Customization
+
+Edit `src/data/data.js` to add your information:
+
 ```
+export const about = {
+  name: "Your Name",
+  role: "Your Role",
+  about: "Your bio and description...",
+  email: "your.email@example.com"
+};
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+export const seo = {
+    title: "Minimal, clean Next.js portfolio template",
+    description: "Minimal, clean Next.js portfolio template for developers seeking a simple, professional online presence without extra complexity.",
+    keywords: "portfolio, web developer, Next.js, developer portfolio, minimal portfolio",
+}
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+export const forms = {
+    formspreeUrl: "https://formspree.io/f/<url>",
+}
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+export const skills = [
+  { name: "Html", icon: "/html.svg" },
+  { name: "React", icon: "/react.svg" }
+];
 
-## Learn More
+export const socials = {
+  github: "https://github.com/yourusername",
+  twitter: "https://twitter.com/yourusername"
+};
 
-To learn more about Next.js, take a look at the following resources:
+export const projects = {
+  pinProjects: [
+    {
+      title: "Project Name",
+      description: "Brief description of your project",
+      tags: ["React", "CSS", "JavaScript"],
+      link: "https://your-project.com"
+    }
+  ],
+  otherProjects: [
+    {
+      title: "Project Name",
+      description: "Brief description of your project",
+      tags: ["React", "CSS", "JavaScript"],
+      link: "https://your-project.com"
+    }
+  ]
+}
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+export const experience = [
+    {
+        title: "Your Title",
+        description: "Your Descriptions",
+        date: "Date",
+    }
+];
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+export const blogs = [
+    {
+        title: "Your Blog Title",
+        date: "Date",
+        link: "#",
+    }
+];
+```
