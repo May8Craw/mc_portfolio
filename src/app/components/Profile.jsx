@@ -4,53 +4,27 @@ import { about } from "@/data/data";
 export default function Profile() {
     return (
         <>
-            <img
-                src="https://i.imgur.com/zjGPTRC.jpeg"
-                className="w-[70px] h-[70px] rounded-[50%] object-cover object-center"
-                alt={`${about.name}'s profile`}
-            />
+
             <div className="flex gap-[5px] items-center mt-1">
                 <h1 className="text-2xl font-semibold">{about.name}</h1>
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24px"
-                    viewBox="0 -960 960 960"
-                    width="24px"
-                    fill="currentColor"
-                >
-                    <path d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm94-278 226-226-56-58-170 170-86-84-56 56 142 142Z" />
-                </svg>
+
             </div>
             <div className="mt-1.5 flex items-center gap-1">
-                <p className="text-base text-base-content/60">{about.role} // </p>
-                <p className="underline cursor-pointer text-base-content/90">
-                    Solo
-                </p>
+                <p className="text-base text-base-content/60">{about.role}</p>
+
             </div>
             <div className="flex items-center mt-3 gap-3">
-                <a href={socials.instagram}>
+                <a href={socials.artstation} target="_blank" rel="noopener noreferrer">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"
                         viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="lucide lucide-instagram-icon lucide-instagram cursor-pointer"
+                        fill="currentColor"
+                        stroke="none"
+                        className="lucide lucide-artstation cursor-pointer"
                     >
-                        <rect
-                            width="20"
-                            height="20"
-                            x="2"
-                            y="2"
-                            rx="5"
-                            ry="5"
-                        />
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                        <path d="M0 17.723l2.027 3.505h.001a2.424 2.424 0 0 0 2.164 1.333h13.457l-2.792-4.838H0zm24 .025c0-.484-.143-.935-.388-1.314L15.728 2.728a2.424 2.424 0 0 0-2.142-1.289H9.419L21.598 22.54l1.92-3.325c.378-.379.482-.907.482-1.488z" />
                     </svg>
                 </a>
 
@@ -72,37 +46,17 @@ export default function Profile() {
                     </svg>
                 </a>
 
-                <a href={socials.facebook}>
+                <a href={socials.linkedin} target="_blank" rel="noopener noreferrer">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"
                         viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="lucide lucide-facebook-icon lucide-facebook cursor-pointer"
+                        fill="currentColor"
+                        stroke="none"
+                        className="lucide lucide-linkedin cursor-pointer"
                     >
-                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                    </svg>
-                </a>
-
-                <a href={socials.twitter}>
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="lucide lucide-twitter-icon lucide-twitter cursor-pointer"
-                    >
-                        <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                     </svg>
                 </a>
             </div>

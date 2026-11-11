@@ -1,8 +1,8 @@
 export const about = {
-    name: "Your Name",
-    role: "Your Profession",
-    about: "A minimal, clean portfolio template built with Next.js. Perfect for developers who want a simple yet professional online presence without the complexity.",
-    email: "your.email@example.com",
+    name: "｡‧˚ʚ Maya Crawford ɞ˚‧｡⋆",
+    role: "Designer // Artist // Game Developer // Creative Storyteller",
+    about: "Hi! My name is Maya Crawford, and I am an aspiring Game Developer and Creative! My dream is to be a part of something that inspires and fills others with joy, just like games, shows, and movies have had an impact on me. I love tackling creative challenges and working with others to bring meaningful experiences to life!",
+    email: "mayacrawford9108@gmail.com",
 };
 
 export const seo = {
@@ -25,10 +25,9 @@ export const skills = [
 ];
 
 export const socials = {
-    github: "https://github.com/sachinbhujel",
-    twitter: "https://twitter.com/sachinbhujel909",
-    instagram: "https://www.instagram.com/imsachinbhujel",
-    facebook: "https://www.facebook.com/imsachinbhujel",
+    github: "https://github.com/May8Craw",
+    artstation: "https://may_craw.artstation.com/",
+    linkedin: "https://www.linkedin.com/in/maya-craw/",
 };
 
 export const projects = {
@@ -101,20 +100,3 @@ export const experience = [
     },
 ];
 
-export const blogs = [
-    {
-        title: "Understanding React Hooks",
-        date: "12/03/2025",
-        link: "#",
-    },
-    {
-        title: "CSS Grid vs Flexbox: When to Use Which",
-        date: "25/12/2024",
-        link: "#",
-    },
-    {
-        title: "Next.js SEO Best Practices",
-        date: "10/07/2024",
-        link: "#",
-    },
-];
